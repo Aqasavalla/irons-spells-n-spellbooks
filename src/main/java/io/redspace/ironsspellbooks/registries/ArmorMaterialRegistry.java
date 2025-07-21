@@ -36,7 +36,7 @@ public class ArmorMaterialRegistry {
             0);
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> WANDERING_MAGICIAN = register("wandering_magician",
-            makeArmorMap(2, 6, 5, 2),
+            makeArmorMap(2, 4, 3, 2),
             15,
             SoundEvents.ARMOR_EQUIP_LEATHER,
             () -> Ingredient.of(Tags.Items.LEATHERS),
@@ -64,7 +64,7 @@ public class ArmorMaterialRegistry {
             20,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.of(Tags.Items.INGOTS_NETHERITE),
-            3,
+            1,
             0);
 
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> PALADIN = register("paladin",
@@ -114,6 +114,6 @@ public class ArmorMaterialRegistry {
     }
 
     static public EnumMap<ArmorItem.Type, Integer> schoolArmorMap() {
-        return makeArmorMap(3, 8, 6, 3);
+        return makeArmorMap(2, 6, 5, 2);
     }
 }
